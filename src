@@ -1,0 +1,32 @@
+//Java döngüler ile girilen sayıya kadar olan 4 ve 5'in kuvvetlerini ekrana yazdıran program
+
+
+import java.util.Scanner;
+
+public class dort_besin_kuvvetleri {
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        
+        int sayi, i;
+        sayi=sc.nextInt();
+        for(i=1; i<=sayi; i++){
+            if(i%4==0)
+                System.out.println("4'ün katları: " +i);
+        }
+
+        System.out.println();
+
+        for(i=1; i<=sayi; i++){
+            if(i%5==0)
+                System.out.println("5'in katları: " +i);
+        }
+
+        System.out.println();
+
+        for(i=1; i<=sayi; i++){
+            if(i%4==0 && i%5==0)
+                System.out.println("4 ve 5'in katları: " +i);
+        }
+
+    }
+}
